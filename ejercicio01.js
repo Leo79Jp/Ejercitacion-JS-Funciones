@@ -9,4 +9,5 @@ a = parseInt(prompt(`Ingrese el primer numero: `))
 b = parseInt(prompt(`Ingrese el segundo numero" : `))
 
 const sumar = ( a, b ) => a + b
+
 console.log(`La suma es: ${sumar(a, b)}`);

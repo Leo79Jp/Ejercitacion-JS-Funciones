@@ -6,13 +6,16 @@ const prompt = require('prompt-sync')({ siging: true })
 a = parseInt(prompt(`Ingrese el primer numero: `))
 b = parseInt(prompt(`Ingrese el segundo numero : `))
 
-const operacion = ( a, b, resultado) => {
-    return a, b, resultado
+const operacion = ( a, b, resultado ) => {
+        // validar que a y b sean numeros
+        if (isNaN(a) || isNaN(b)) {
+            return 'Error: Debe ingresar un numero'
+          }
+          return resultado(a, b)
+}
+const suma = (a, b) => a + b
 
-const suma = ( a, b, resultado) => resultado = a + b
-
- }
- console.log(`La suma es: ${operacion(a, b, suma)}`);
-
-
- 
+ console.log(
+    `La suma entre ${a} y ${b} es ${operacion(a, b, suma)}`
+  )
+  
