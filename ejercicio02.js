@@ -15,7 +15,4 @@ const operacion = ( a, b, resultado ) => {
 }
 const suma = (a, b) => a + b
 
- console.log(
-    `La suma entre ${a} y ${b} es ${operacion(a, b, suma)}`
-  )
-  
+ console.log(`La suma entre ${a} y ${b} es ${operacion(a, b, suma)}`)
