@@ -4,3 +4,12 @@
 
 const prompt = require('prompt-sync')({ siging: true })
 
+function F(X, Y){
+    return  (X * 5.6) + (Y / 2.5)
+}
+
+console.log(F(3, 5));
+console.log(F(9, 2));
+console.log(F(56, 87));
+
+

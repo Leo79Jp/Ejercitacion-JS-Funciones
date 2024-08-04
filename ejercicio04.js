@@ -4,3 +4,15 @@
 
 
 const prompt = require('prompt-sync')({ siging: true })
+miCaracterMinuscula = (prompt(`Ingrese un caracter : `))
+
+function miFuncion (caracter){
+    if (caracter>='a' && caracter <='z'){
+        return caracter.toUpperCase()
+    }
+return caracter
+}
+
+console.log({miCaracterMinuscula});
+const miCaracterMayuscula = miFuncion(miCaracterMinuscula)
+console.log(`Mi caracter en mayusculas: "${miCaracterMayuscula}"`);
